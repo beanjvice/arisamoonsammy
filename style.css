@@ -2,10 +2,16 @@ body{
     background-color: #e2f7ff;
     margin: 0;
     padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-style: thin;
+
 }
 
 /* navigation bar */
 .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: white;
     overflow: hidden;
     position: sticky;
@@ -14,7 +20,13 @@ body{
     z-index: 1000;
 }
 
-.topnav a {
+.nav-links{
+    display: flex;
+    gap: 5px;
+    font-weight: 400;
+}
+
+.nav-bar a {
     float: right;
     color: #217392;
     text-align: center;
@@ -32,4 +44,35 @@ body{
 .nav-bar a.active{
     color: #074159;
     text-decoration: none;
+}
+
+#name{
+    float: left;
+    padding-left: 30px;
+    color: #074159;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* home */
+
+.home{
+
+}
+
+h1{
+    font-family: "Alata", sans-serif;
+    font-weight: 800;
+    font-style: normal; 
+    font-size: 62px;
+    color: #217392;
+    margin-bottom: 10px;
+}
+
+h4{
+    color: #5e7179;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 0;
 }
