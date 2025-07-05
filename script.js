@@ -4,7 +4,7 @@ const totalSlides = slides.length;
 
 function showSlide(index) {
     slides.forEach((slide, i) => {
-        slide.classList.toggle('actice', i === index);
+        slide.classList.toggle('active', i === index);
     });
 }
 
@@ -15,5 +15,5 @@ function nextSlide () {
 
 if (slides.length > 0) {
     showSlide(currentSlide)
-    setInterval(nextSlide, 3000);
+    setInterval(nextSlide, 5000);
 }
