@@ -39,11 +39,20 @@ document.querySelectorAll('.company-tab').forEach(tab => {
 
         document.querySelectorAll('.timeline-item').forEach(item => {
             item.style.display = 'none';
+            item.classList.remove('show');
         });
 
         const company = this.getAttribute('data-company');
         const selected = document.querySelector(`.timeline-item[data-company="${company}"]`);
-        if (selected) selected.style.display = '';
+        if (selected) {
+            selected.style.display = '';
+
+            void selected.offsetWidth;
+            setTimeout(() => {
+                selected.classList.add('show');
+            }, 10);
+
+        }
     });
 });
 
